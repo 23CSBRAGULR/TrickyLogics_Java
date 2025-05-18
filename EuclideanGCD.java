@@ -1,7 +1,11 @@
+//a program that finds out the Greatest Common Divisor of any two positive integers using the Euclidean's Mathematical method
+//btw there's another kinda inefficient logic for finding the GCD in the program 'GCD.java'
+
 import java.util.Scanner;
 
 public class EuclideanGCD {
 
+    //the method that performs the Euclidean's method of finding the GCD
     static int gcdCalculation(int number1, int number2) {
         int smallest = Math.min(number1, number2);
         int largest = Math.max(number1, number2);
@@ -25,5 +29,6 @@ public class EuclideanGCD {
 
         int gcd = gcdCalculation(firstNumber, secondNumber);
         System.out.println("The Greatest Common Divisor(GCD) of " + firstNumber + " and " + secondNumber + " is " + gcd + ".");
+        inputs.close();
     }
 }
