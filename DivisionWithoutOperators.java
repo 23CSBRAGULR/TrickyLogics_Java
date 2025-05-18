@@ -1,7 +1,10 @@
+//a program that performs division operation without using the division operator(/,%)
+
 import java.util.Scanner;
 
 public class DivisionWithoutOperators {
 
+    //the method I wrote that performs division indirectly
     static void division(int fn, int sn) {
         int divisor = sn;
         int quotient = 0;
@@ -19,6 +22,7 @@ public class DivisionWithoutOperators {
         System.out.println("Quotient = " + quotient);
     }
 
+    //the method chatGPT wrote after reviewing my method
     /*static void division(int dividend, int divisor) {
         int quotient = 0;
         int remainder = dividend;
@@ -40,6 +44,7 @@ public class DivisionWithoutOperators {
         System.out.print("Enter the Divisor : ");
         int ds = inputs.nextInt();
 
+        //a while loop to check whether the divisor is grater than the dividend and if the divisor is 0
         while((ds > dd || ds == 0) && dd != 0) {
             if(ds > dd) {
                 System.out.print("Enter a Divisor that is smaller than the Dividend for correct results : ");
@@ -51,5 +56,6 @@ public class DivisionWithoutOperators {
             }
         }
         division(dd, ds);
+        inputs.close();
     }
 }
