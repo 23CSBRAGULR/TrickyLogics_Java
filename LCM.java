@@ -1,7 +1,10 @@
+//a program that finds the Least Common Multiple of any two numbers
+
 import java.util.Scanner;
 
 public class LCM {
 
+    //the method that returns the GCD of the two numbers
     static int gcdCalculation(int number1, int number2) {
         int smallest = Math.min(number1, number2);
         int largest = Math.max(number1, number2);
@@ -15,13 +18,13 @@ public class LCM {
         return gcd;
     }
 
-    int lcmClaculation(int number1, int number2, int gcd) {
+    //the method that returns the LCM by using the Mathematical logic "Product of the two numbers divided by the gcd of the two numbers"
+    static int lcmClaculation(int number1, int number2, int gcd) {
         int lcm = (number1*number2) / gcd;
         return lcm;
     }
 
     public static void main(String[] args) {
-        LCM ob = new LCM();
         Scanner inputs = new Scanner(System.in);
 
         System.out.print("Enter the first number : ");
@@ -29,9 +32,10 @@ public class LCM {
         System.out.print("Enter the second number : ");
         int secondNumber = inputs.nextInt();
 
-        int gcd = ob.gcdCalculation(firstNumber, secondNumber);
-        int lcm = ob.lcmClaculation(firstNumber, secondNumber, gcd);
+        int gcd = gcdCalculation(firstNumber, secondNumber);
+        int lcm = lcmClaculation(firstNumber, secondNumber, gcd);
 
         System.out.println("The LCM of " + firstNumber + " and " + secondNumber + " is " + lcm);
+        inputs.close();
     }
 }
