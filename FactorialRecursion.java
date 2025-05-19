@@ -1,3 +1,5 @@
+//a program that uses a reecursive method to find the gcd of a number
+
 import java.util.Scanner;
 
 public class FactorialRecursion {
@@ -17,5 +19,6 @@ public class FactorialRecursion {
         int number = inputs.nextInt();
 
         System.out.println(factorialCalculation(number));
+        inputs.close();
     }
 }
