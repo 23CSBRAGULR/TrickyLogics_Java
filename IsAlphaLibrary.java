@@ -1,3 +1,5 @@
+//a program that checks if a character is Alphabetic using the java's library method
+
 import java.util.Scanner;
 
 public class IsAlphaLibrary {
@@ -19,5 +21,6 @@ public class IsAlphaLibrary {
         else {
             System.out.println("No, its not an Alphabet.");
         }
+        inputs.close();
     }
 }
