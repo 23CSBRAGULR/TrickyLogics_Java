@@ -1,3 +1,5 @@
+//a program that slices an integer and finds out the digit places of each numbers(upto 9999)
+
 import java.util.Scanner;
 
 public class IntegerSlicing {
@@ -24,11 +26,9 @@ public class IntegerSlicing {
         if(input > 10) {
             System.out.println("Tens Place : " + tens);
         }
-        if(input > 0) {
+        if(input >= 0) {
             System.out.println("Ones Place : " + ones);
         }
-        if(input == 0) {
-            System.out.println("Ones Place : " + input);
-        }
+        inputs.close();
     }
 }
