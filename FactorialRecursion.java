@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class FactorialRecursion {
 
+    //the function that performs recursion and returns the factorial value
     public static int factorialCalculation(int num) {
         if(num == 0 || num == 1) {
             return 1;
