@@ -1,7 +1,10 @@
+//the program that fetches a number from the user then returns the number's words using a logic
+
 import java.util.Scanner;
 
 public class NumbersToWords {
 
+    //the method that contains and returns the array of number's names upto twenty
     String uptoTwenty(int input) {
         String uptoTwenty[] = {
             "One", "Two", "Three", "Four", "Five",
@@ -12,6 +15,7 @@ public class NumbersToWords {
         return uptoTwenty[input - 1];
     }
 
+    //the method that contains and returns the array of number's names of tens places
     String tens(int input) {
         String tens[] = {
             "Ten", "Twenty", "Thirty", "Forty", "Fifty",
@@ -27,11 +31,13 @@ public class NumbersToWords {
         System.out.print("Enter the Number : ");
         int input = inputs.nextInt();
 
+        //a while loop that checks if the number is under the 10000 limit
         while(input >= 10000 || input <= -10000) {
             System.out.print("Enter a Valid Number between Positive and Negative 10000 : ");
             input = inputs.nextInt();
         }
 
+        //the statement that checks whether the given number is a negative integer
         boolean negativity = false;
         if(input < 0){
             negativity = true;
@@ -88,5 +94,7 @@ public class NumbersToWords {
         else {
             System.out.println(finalWords + ".");
         }
+
+        inputs.close();
     }
 }
