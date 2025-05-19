@@ -1,7 +1,10 @@
+//a program that performs integer reversal and check if its a Palindrome
+
 import java.util.Scanner;
 
 public class IntegerPalindrome {
 
+    //the method that checks if the given integer is a Palindrome
     static boolean ifPalindrome(String str1, String str2) {
         return str1.equals(str2);
     }
@@ -12,7 +15,6 @@ public class IntegerPalindrome {
         System.out.print("Enter a Number : ");
         int number = inputs.nextInt();
         String num = "" + number;
-        inputs.close();
 
         int digits = 0;
         String reverse = "";
@@ -30,5 +32,6 @@ public class IntegerPalindrome {
         else {
             System.out.println(num + " is Not a Palindrome");
         }
+        inputs.close();
     }
 }
