@@ -2,63 +2,54 @@ import java.util.Scanner;
 
 public class EvenNumberReversal {
 
-    static int digitCount(int number) {
-        int digitCount = 0;
-        while(number != 0) {
-            number /= 10;
-            digitCount++;
-        }
-        return digitCount;
-    }
-
     static void reversal(int number) {
 
         int num[] = {number/1000, (number%1000)/100, (number%100)/10, number%10};
 
-        int lengthAndIndex = 0;
+        int evens = 0;
         for(int i = 0; i < num.length; i++) {
             if(num[i] % 2 == 0) {
-                lengthAndIndex++;
+                evens++;
             }
         }
-        int pos[] = new int[lengthAndIndex];
+        int pos[] = new int[evens];
 
-        lengthAndIndex = 0;
+        evens = 0;
         for(int i = 0; i < num.length; i++) {
             if(num[i] % 2 == 0) {
-                pos[lengthAndIndex] = i;
-                lengthAndIndex++;
+                pos[evens] = i;
+                evens++;
             }
         }
 
-        for(int i = 0; i < pos.length; i++) {
-            System.out.print(pos[i] + " ");
-        }
-
-        String reverse = "";
-        boolean ifEven = false;
-        for(int i = num.length - 1; i >= 0 ; i--) {
-            for(int j = 0; j < pos.length; j++) {
-                if(i == pos[j]) {
-                    ifEven = true;
-                    reverse += num[j];
+        System.out.print("\nAfter Reversal : ");
+        evens = pos.length - 1;
+        int index = 0;
+        
+        for(int i = 0; i < num.length ; i++) {
+            if(i == pos[index]) {
+                System.out.print(num[pos[evens]]);
+                evens--;
+                if(index + 1 < pos.length) {
+                    index++;
                 }
             }
-            if(ifEven == false) {
-                reverse += num[i];
+            else {
+                System.out.print(num[i]);
             }
-        }
-
-        for(int i = reverse.length() - 1; i >= 0; i--) {
-            System.out.print(reverse.charAt(i));
         }
     }
 
     public static void main(String[] args) {
         Scanner inputs = new Scanner(System.in);
 
-        System.out.print("Enter the number : ");
+        System.out.print("\nEnter the number(upto 9999) : ");
         int number = inputs.nextInt();
+
+        while(number > 9999 || number < 0) {
+            System.out.print("\nEnter a Valid Number : ");
+            number = inputs.nextInt();
+        }
 
         reversal(number);
         inputs.close();
