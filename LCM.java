@@ -18,7 +18,8 @@ public class LCM {
         return gcd;
     }
 
-    //the method that returns the LCM by using the Mathematical logic "Product of the two numbers divided by the gcd of the two numbers"
+    //the method that returns the LCM by using the Mathematical logic--
+    //"Product of the two numbers divided by the gcd of the two numbers"
     static int lcmClaculation(int number1, int number2, int gcd) {
         int lcm = (number1*number2) / gcd;
         return lcm;

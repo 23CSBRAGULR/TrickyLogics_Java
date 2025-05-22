@@ -8,7 +8,7 @@ public class AlphabetOrNot {
         System.out.print("Enter the Character to check wheather it is a Alphabet or Nah : ");
         String input = inputs.next();
 
-        //a loop to check whether the user entered only a single character
+        //a loop to check whether the user entered only one character
         while(input.length() > 1) {
             System.out.println("One Character at a time YOU IDIOT!");
             input = inputs.next();

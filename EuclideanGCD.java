@@ -1,11 +1,16 @@
-//a program that performs the Mathematician Euclidean's method of finding the Greatest Common Divisor of any two numbers
-//if you're wondering whether there's any other way to find the GCD, there's a less efficient logic that I wrote in the program "GCD.java"
+//a program that performs the Mathematician Euclidean's method of finding the Greatest Common Divisor
+//if you're wondering whether there's any other way to find the GCD,
+//there's a less efficient logic that I wrote in the program "GCD.java"
 
 import java.util.Scanner;
 
 public class EuclideanGCD {
 
-    //the method that performs the Euclidean's method. Hope you figure out the logic
+    //the method that performs the Euclidean's method
+    //the logic is to subtract the larger number with the smaller number
+    //then checking which one is larger again among the smaller number and the difference value
+    //repeating this process until one of the number becomes zero
+    //and the remaining non-zero number is the gcd of the two numbers
     static int gcdCalculation(int number1, int number2) {
         int smallest = Math.min(number1, number2);
         int largest = Math.max(number1, number2);

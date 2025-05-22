@@ -1,3 +1,5 @@
+//the following program reverses any given integer regardless of the number of digits
+
 import java.util.Scanner;
 
 public class ReversingInteger {

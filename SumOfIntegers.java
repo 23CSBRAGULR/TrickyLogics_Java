@@ -1,3 +1,5 @@
+//the following program simply finds the sum of a multiple digit integer
+
 import java.util.Scanner;
 
 public class SumOfIntegers {
@@ -7,6 +9,7 @@ public class SumOfIntegers {
         System.out.print("Enter a Number : ");
         int number = inputs.nextInt();
 
+        //the following loop finds the sum value of the integer
         int sum = 0;
         while(number != 0) {
             sum += (number%10);

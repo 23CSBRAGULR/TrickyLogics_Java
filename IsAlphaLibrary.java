@@ -15,6 +15,7 @@ public class IsAlphaLibrary {
 
         char check = input.charAt(0);
 
+        //this isAlphabetic() methos returns a boolean value after checking if its alphabetic
         if(Character.isAlphabetic(check)) {
             System.out.println("Yes, it is an Alphabet.");
         }

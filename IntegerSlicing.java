@@ -1,4 +1,6 @@
 //a program that slices an integer and finds out the digit places of each numbers(upto 9999)
+//this is my old, less efficient version of slicing an integer
+//the new version is uploaded as "NewIntegerSlicing.java"
 
 import java.util.Scanner;
 

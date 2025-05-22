@@ -3,12 +3,6 @@
 import java.util.Scanner;
 
 public class IntegerPalindrome {
-
-    //the method that checks if the given integer is a Palindrome
-    static boolean ifPalindrome(String str1, String str2) {
-        return str1.equals(str2);
-    }
-
     public static void main(String[] args) {
         Scanner inputs = new Scanner(System.in);
 
@@ -16,6 +10,7 @@ public class IntegerPalindrome {
         int number = inputs.nextInt();
         String num = "" + number;
 
+        //the following loop reverses the given integer by concatenating the digits in reverse
         int digits = 0;
         String reverse = "";
         while(number != 0) {
@@ -26,7 +21,7 @@ public class IntegerPalindrome {
 
         System.out.println("Reversed Form : " + reverse);
 
-        if(ifPalindrome(num, reverse)) {
+        if(num.equals(reverse)) {
             System.out.println(num + " is a Palindrome");
         }
         else {

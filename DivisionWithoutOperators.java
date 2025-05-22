@@ -1,4 +1,4 @@
-//a program that performs division operation without using the division operator(/,%)
+//a program that performs division operation without using the division operators(/,%)
 
 import java.util.Scanner;
 
