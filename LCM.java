@@ -1,5 +1,7 @@
 //a program that finds the Least Common Multiple of any two numbers
 
+package TrickyLogics_Java;
+
 import java.util.Scanner;
 
 public class LCM {

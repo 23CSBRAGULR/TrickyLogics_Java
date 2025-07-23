@@ -1,6 +1,8 @@
 //the following program reverses the positions of only the even numbers in the given number
 //this program contains some amateur ways for solving problems
 
+package TrickyLogics_Java;
+
 import java.util.Scanner;
 
 public class EvenNumberReversal {

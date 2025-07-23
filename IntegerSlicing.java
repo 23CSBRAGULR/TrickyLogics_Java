@@ -2,6 +2,8 @@
 //this is my old, less efficient version of slicing an integer
 //the new version is uploaded as "NewIntegerSlicing.java"
 
+package TrickyLogics_Java;
+
 import java.util.Scanner;
 
 public class IntegerSlicing {

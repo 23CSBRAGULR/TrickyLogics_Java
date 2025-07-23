@@ -1,5 +1,7 @@
 //a Program that fetches a character from the user and checks whether it is Alphabetic
 
+package TrickyLogics_Java;
+
 import java.util.Scanner;
 
 public class AlphabetOrNot {

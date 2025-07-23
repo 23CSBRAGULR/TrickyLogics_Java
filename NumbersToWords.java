@@ -1,5 +1,7 @@
 //the program that fetches a number from the user then returns the number's words using a logic
 
+package TrickyLogics_Java;
+
 import java.util.Scanner;
 
 public class NumbersToWords {

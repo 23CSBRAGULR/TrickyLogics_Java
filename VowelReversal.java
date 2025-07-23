@@ -1,5 +1,7 @@
 //this program reverses the positions of only the vowels in the given word(s) and prints the result
 
+package TrickyLogics_Java;
+
 import java.util.Scanner;
 
 public class VowelReversal {

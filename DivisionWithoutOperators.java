@@ -1,5 +1,7 @@
 //a program that performs division operation without using the division operators(/,%)
 
+package TrickyLogics_Java;
+
 import java.util.Scanner;
 
 public class DivisionWithoutOperators {

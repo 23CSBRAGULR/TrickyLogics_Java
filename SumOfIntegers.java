@@ -1,5 +1,7 @@
 //the following program simply finds the sum of a multiple digit integer
 
+package TrickyLogics_Java;
+
 import java.util.Scanner;
 
 public class SumOfIntegers {

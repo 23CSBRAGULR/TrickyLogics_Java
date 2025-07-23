@@ -1,6 +1,8 @@
 //the method I came up with for finding the GCD of any two numbers
 //less efficient than Euclidean's method
 
+package TrickyLogics_Java;
+
 import java.util.Scanner;
 
 public class GCD {

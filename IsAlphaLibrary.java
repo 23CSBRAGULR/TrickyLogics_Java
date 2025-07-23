@@ -1,5 +1,7 @@
 //a program that checks if a character is Alphabetic using the java's library method
 
+package TrickyLogics_Java;
+
 import java.util.Scanner;
 
 public class IsAlphaLibrary {

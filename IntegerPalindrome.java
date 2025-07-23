@@ -1,5 +1,7 @@
 //a program that performs integer reversal and check if its a Palindrome
 
+package TrickyLogics_Java;
+
 import java.util.Scanner;
 
 public class IntegerPalindrome {

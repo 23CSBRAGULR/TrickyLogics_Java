@@ -2,6 +2,8 @@
 //if you're wondering whether there's any other way to find the GCD,
 //there's a less efficient logic that I wrote in the program "GCD.java"
 
+package TrickyLogics_Java;
+
 import java.util.Scanner;
 
 public class EuclideanGCD {

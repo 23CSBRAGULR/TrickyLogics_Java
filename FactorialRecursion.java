@@ -1,5 +1,7 @@
 //a program that uses a reecursive method to find the gcd of a number
 
+package TrickyLogics_Java;
+
 import java.util.Scanner;
 
 public class FactorialRecursion {

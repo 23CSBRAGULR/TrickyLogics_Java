@@ -1,6 +1,8 @@
 //a new Integer Slicing program that slices a number regardless of the number of digits
 //and prints the digit names
 
+package TrickyLogics_Java;
+
 import java.util.Scanner;
 
 public class NewIntegerSlicing {
